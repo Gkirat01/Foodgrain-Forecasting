@@ -10,7 +10,7 @@ from pmdarima import auto_arima
 app = Flask(__name__)
 
 #the file which we want to read
-dataset = pd.read_csv("C:\\Users\\intel\\Desktop\\jharkhand.csv", nrows=996)
+dataset = pd.read_csv("C:\\Users\\intel\\Desktop\\project.csv", nrows=996)
 
 #Dropping off the unnecessary columns
 dataset= dataset.drop(['enquiry_status', 'terminal_id', 'rc_id', 'scheme_id', 'scheme_name', 'schemetype', 'balance_allotment', 'price_per_kg', 'allowed_allotment', 'type_of_trans','auth_mode', 'status', 'trans_status', 'member_name', 'amount', 'transaction_id','sale_fps_id','home_fps_id','created_on','updated_on','no_of_members','allocationmonth','allocationyear','commodity_code','balance_allotment','impds_trans_id','trans_id','session_id','uid','uid_token','receipt_id','uid_refer_no','remarks','date_time','member_id'], axis=1 )
