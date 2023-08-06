@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {text-align: center;}
+    <title>Visualization</title>
+</style>
+</head>
+<body>
+    <h1>Foodgrain Forecasting in One Nation One Ration Card</h1>
+
+    <h2>Relationship between Sale State and Home State:</h2>
+    <img src="{{ new_path }}" alt="Bar Graph">
+
+    <h2>Total Distribution of Wheat, Rice, Pmgkay Wheat, and Pmgkay Rice in Delhi</h2>
+    <img src="{{ plot_path}}" alt="Line Graph">
+
+    <h2>Model Evaluation</h2>
+         <p>{{ pred_text }}</p>
+         <p>{{ actual_text }}</p>
+    <p>{{ mae_text }}</p>
+    <p>{{ rmse_text }}</p>
+    <p>{{ accuracy_text }}</p>
+
+
+    <h2>Predicted Distribution for Delhi in the Next Three months(August-October) </h2>
+    <img src="{{ predicted_path }}" alt="Predicted Graph">
+
+
+
+</body>
+</html>
